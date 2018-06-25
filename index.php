@@ -3,7 +3,7 @@
  * Include database information (pdo)
  */
 
-/*
+
 session_start();
 //Get the POST variables
 $inputUsername = $_POST["user"];
@@ -14,17 +14,18 @@ $inputPW = $_POST["pw"];
 $inputPW = hash(sha256,$inputPW);
 $dbPasswordHash = $inputPW;
 $dbUserID = 1;
+
 if (isset($_GET["login"])){
 /**
  *check is the user an user
  *check is password, the right password
- */
-/*
+*/
  if (($inputPW == $dbPasswordHash)){
      //$_SESSION['userID'] = $dbUserID;
      header('Location: ./dashboard.php');
  }
 }
+/*
 echo $inputPW."=".$dbPasswordHash."SessionId= ".$_SESSION['userID'];
 define('DS', '/');
 define('ROOT_PATH', __DIR__);
