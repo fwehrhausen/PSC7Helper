@@ -1,0 +1,16 @@
+.navbar-inverse{
+    background-color: #4a4a4a;
+}
+.center{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+red{
+    background-color: #990d19;
+    color: #fff;
+}
+
+.form-connector{
+    margin-bottom: 10px;
+}
